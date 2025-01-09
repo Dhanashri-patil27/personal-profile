@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanashri Patil - Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
+  <style>
+    /* Global Font and Styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fbe0e6; /* Light pastel pink */
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive; /* Playful and elegant font for titles */
+    }
+
+    p, li {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    /* Animation for Sliding Name */
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .name-slide {
+      font-size: 3rem;
+      color: #ff4b9f; /* Soft pinkish-red */
+      animation: slideIn 1.5s ease-out forwards;
+      overflow: hidden;
+    }
+
+    .name-slide .highlight {
+      font-family: 'Dancing Script', cursive;
+      color: #ff69b4; /* Hot pink */
+    }
+
+    /* Subtitle */
+    .subtitle {
+    font-size: 1.5rem;
+    color: #333; /* Default color */
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Ensure visibility in dark mode */
+.dark-mode .subtitle {
+    color: #e0e0e0; /* Light color for dark background */
+}
+
+    /* Home Section */
+    #home {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #ff8db6, #ffb6d1); /* Soft pink gradient */
+      color: white;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background-color: #ff8db6;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: #ff5e8f; /* Darker pink */
+      transform: scale(1.05);
+    }
+
+    /* Section Animations */
+    section {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #about {
+      background-color: #fff1f7;
+      padding: 50px 20px;
+      animation-delay: 0.5s;
+    }
+
+    #projects {
+      background-color: #ffe6eb;
+      padding: 50px 20px;
+      animation-delay: 1s;
+    }
+
+    #skills {
+      background-color: #ffe0f3;
+      padding: 50px 20px;
+      animation-delay: 1.5s;
+    }
+
+    #contact {
+      background-color: #ff69b4;
+      padding: 50px 20px;
+      animation-delay: 2s;
+      color: white;
+      text-align: center;
+    }
+
+    /* Social Links */
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-link, .download-resume {
+      display: inline-block;
+      background-color: #ff8db6;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    .social-link:hover, .download-resume:hover {
+      background-color: #ff5e8f;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff4b9f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Dark Mode */
+    .dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .dark-mode a {
+      color: #ffb6d1;
+    }
+
+  </style>
+</head>
+<body>
+  <header id="home">
+    <div class="container">
+      <h1 class="name-slide">Hi, I'm <span class="highlight">Dhanashri Sudam Patil</span></h1>
+      <p class="subtitle">Node.js Backend Developer</p>
+      <p><em>"Passionate about building scalable backend systems."</em></p>
+      <a href="#contact" class="contact-btn">Get in Touch</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate backend developer with experience in building scalable and secure server-side applications. 
+        In my professional journey, I have contributed to complex projects, including IoT-based systems, where I leveraged my skills in Node.js, PostgreSQL, and API design.
+    </p>        
+    <div class="icons">
+      <div><i class="fas fa-laptop-code"></i> Backend Development</div>
+      <div><i class="fas fa-cloud"></i> Cloud Services</div>
+      <div><i class="fas fa-cogs"></i> API Development</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <i class="fas fa-shopping-cart"></i>
+      <h3>GroceryHub</h3>
+      <p>
+        A platform for managing grocery items and orders. Built with RESTful APIs and integrates secure user authentication.
+      </p>
+    </div>
+    <div class="project-card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>SpatialSearchAPI</h3>
+      <p>
+        API that handles spatial data, allowing users to manage points, polygons, and perform radius searches.
+      </p>
+    </div>
+    <h2>Professional Contributions</h2>
+<div class="project-card">
+  <i class="fas fa-server"></i>
+  <h3>SALUS Smart Home</h3>
+  <p>Collaborated on a smart home IoT project as part of my professional role. Worked on:</p>
+  <p>Backend development using Node.js and PostgreSQL. </p>
+  <p>Designed and implemented secure API endpoints for IoT devices. </p>
+  <p>Integrated MQTT protocols for real-time device communication. </p>
+  <p>Optimized database queries for improved performance. </p>
+</div>
+
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li><i class="fas fa-code"></i> Node.js, JavaScript (ES6+), Express.js</li>
+      <li><i class="fab fa-aws"></i> AWS, DynamoDB, EC2</li>
+      <li><i class="fab fa-docker"></i> Docker, Git, GitHub</li>
+      <li><i class="fas fa-plug"></i> API Development, RESTful Services</li>
+      <li><i class="fas fa-database"></i> Proficient in databases like PostgreSQL and DynamoDB.</li>
+    </ul>
+    <h3>Soft Skills</h3>
+    <ul>
+      <li><i class="fas fa-users"></i> Teamwork & Collaboration</li>
+      <li><i class="fas fa-lightbulb"></i> Problem Solving & Critical Thinking</li>
+      <li><i class="fas fa-comments"></i> Communication & Leadership</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to reach out via email, LinkedIn, or check out my GitHub and resume:</p>
+    <p><strong>Email:</strong> <a href="mailto:dhanashripatil735@gmail.com">dhanashripatil735@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dhanashri-s-patil-30456a252" target="_blank">LinkedIn Profile</a></p>
+    
+    <div class="social-links">
+        <a href="https://github.com/Dhanashri-patil27?tab=repositories" target="_blank" class="social-link">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="path_to_resume.pdf" download class="download-resume">
+            <i class="fas fa-file-download"></i> Download Resume
+        </a>
+    </div>
+    
+    <a href="mailto:dhanashripatil735@gmail.com" class="contact-btn">Send an Email</a>
+  
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dhanashri Patil. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add a Dark Mode Toggle Button
+    const toggleButton = document.createElement('button');
+    toggleButton.innerText = '🌙'; // Initial icon for light mode
+    toggleButton.style.position = 'fixed';
+    toggleButton.style.top = '20px';
+    toggleButton.style.right = '20px';
+    toggleButton.style.fontSize = '1.5rem';
+    toggleButton.style.padding = '10px';
+    toggleButton.style.backgroundColor = '#ff69b4'; // Pink color for the button
+    toggleButton.style.color = 'white';
+    toggleButton.style.border = 'none';
+    toggleButton.style.borderRadius = '50%';
+    toggleButton.style.cursor = 'pointer';
+    toggleButton.style.zIndex = '1000'; // Ensure it's on top of other elements
+    document.body.appendChild(toggleButton);
+  
+    // Toggle Dark Mode Functionality
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleButton.innerText = document.body.classList.contains('dark-mode') ? '🌕' : '🌙'; // Change icon
+    });
+  
+    // Add Dark Mode Styles
+    const darkModeStyles = document.createElement('style');
+    darkModeStyles.innerText = `
+      .dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      .dark-mode a {
+        color: #ff8db6;
+      }
+      .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+        color: #ff8db6;
+      }
+    `;
+    document.head.appendChild(darkModeStyles);
+  </script>
+  
+</body>
+</html>
