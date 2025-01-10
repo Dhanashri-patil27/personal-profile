@@ -338,28 +338,3 @@ body.dark-mode #skills ul li {
 body.dark-mode #skills ul li:hover {
   color: #ffb3d9;
 }
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    #home h1 {
-        font-size: 2.5rem;
-    }
-    #home p.subtitle {
-        font-size: 1.4rem;
-    }
-    h2, h3 {
-        font-size: 1.8rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    .project-card h3 {
-        font-size: 1.6rem;
-    }
-    .contact-btn {
-        font-size: 1rem;
-        padding: 10px 25px;
-    }
-    #contact h2 {
-        font-size: 2.2rem;
-    }
-}
