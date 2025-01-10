@@ -255,86 +255,46 @@ footer p {
     opacity: 0;
 }
 
+/* Dark Mode */
 body.dark-mode {
     background-color: #333;
-    color: #f4f4f9;
-}
-
-body.dark-mode #home {
-    background: linear-gradient(135deg, #ff5c8d, #ff3b6d);
+    color: white;
 }
 
 body.dark-mode footer {
     background-color: #222;
 }
 
-/* Social Links */
-#contact .social-links {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-#contact .social-links a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #333;
-    padding: 12px 30px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#contact .social-links a:hover {
-    background-color: #dc69ff;
-}
-
-/* Resume Button */
-#contact .social-links a.download-resume {
-    background-color: #f89cd8;
-    padding: 14px 35px;
-}
-
-#contact .social-links a.download-resume:hover {
-    background-color: #dc69ff;
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #333;
-  color: white;
-}
-
-body.dark-mode #home {
-  background: linear-gradient(135deg, #1e1e1e, #444);
-}
-
-body.dark-mode #about, body.dark-mode #projects, body.dark-mode #skills, body.dark-mode #contact {
-  background-color: #444;
-}
-
-body.dark-mode .contact-btn {
-  background-color: #444;
-}
-
-body.dark-mode footer {
-  background-color: #1e1e1e;
-}
-
 body.dark-mode ul li {
-  color: #f4f4f9; /* Light text color for dark mode */
-}
-
-body.dark-mode .project-card ul li {
-  color: #ddd; /* Override color in dark mode */
+    color: #f4f4f9; /* Light text color for dark mode */
 }
 
 body.dark-mode #skills ul li {
-  color: #f4f4f9; /* Text color for dark mode */
+    color: #f4f4f9; /* Text color for dark mode */
 }
 
-body.dark-mode #skills ul li:hover {
-  color: #ffb3d9;
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    #home p.subtitle {
+        font-size: 1.4rem;
+    }
+    h2, h3 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .project-card h3 {
+        font-size: 1.6rem;
+    }
+    .contact-btn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+    #contact h2 {
+        font-size: 2.2rem;
+    }
 }
