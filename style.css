@@ -367,19 +367,19 @@ body.dark-mode #skills ul li:hover {
 
     .project-card {
         width: 100%;  /* Full width for cards on mobile */
-        padding: 15px;  /* Reduce padding */
-        margin: 10px 0;  /* Adjust margin */
+        margin-bottom: 15px;
     }
 
-    #skills ul li, #projects ul li {
-        font-size: 1rem;  /* Reduce text size for list items */
+    .project-card i {
+        font-size: 2.5rem;  /* Adjust icon size */
     }
 
-    #home, #about, #projects, #skills, #contact {
-        padding: 20px;  /* Ensure no content is cut off */
+    .icons {
+        gap: 20px;  /* Reduce gap for icons */
     }
 
-    .contact-btn {
-        padding: 12px 30px;  /* Adjust button size */
+    .social-links a {
+        font-size: 1rem;  /* Smaller social link icons */
+        padding: 12px 20px;
     }
 }
